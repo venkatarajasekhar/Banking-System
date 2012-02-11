@@ -1,0 +1,9 @@
+login
+admin
+transfer
+John Smith
+00002
+will smith
+00002
+logout
+quit

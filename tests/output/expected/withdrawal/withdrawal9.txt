@@ -1,0 +1,10 @@
+System initiating...
+Please Login to the System
+Please choose the type of session. [standard|admin]
+Please enter your name.
+Welcome, Will_Smith. Please enter a command.
+Which account would you like to withdraw from?
+What amount would you like to withdraw? [In Canadian dollars]
+Error: Withdrawal limit of $500
+Goodbye, Will_Smith.
+System shutting down

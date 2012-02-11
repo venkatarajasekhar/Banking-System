@@ -1,0 +1,9 @@
+System initiating...
+Please Login to the System
+Please choose the type of session. [standard|admin]
+Welcome, Admin. Please enter a command.
+What is the name of the account holder?
+Which account would you like to delete?
+Error: Invalid Account
+Goodbye, Admin.
+System shutting down

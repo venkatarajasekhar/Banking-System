@@ -1,0 +1,7 @@
+login
+admin
+enable
+admin
+cancel
+logout
+quit

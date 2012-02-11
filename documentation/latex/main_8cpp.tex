@@ -1,0 +1,116 @@
+\hypertarget{main_8cpp}{
+\section{main.cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+}
+
+
+This is the main driver file that will run.  
+
+
+{\ttfamily \#include $<$iostream$>$}\par
+{\ttfamily \#include $<$string$>$}\par
+{\ttfamily \#include $<$sstream$>$}\par
+{\ttfamily \#include \char`\"{}interactive-\/stream-\/handler.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}transaction-\/file-\/writer.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}bank-\/account-\/reader.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{main_8cpp_ad2a2c372bd6eceab8f210d2c6397ea89}{
+\hyperlink{classTransactionFileWriter}{TransactionFileWriter} {\bfseries writer} (interact.tra\_\-directory, interact.transaction\_\-file\_\-extension)}
+\label{main_8cpp_ad2a2c372bd6eceab8f210d2c6397ea89}
+
+\item 
+\hypertarget{main_8cpp_a51eb6b70e5b9a67d6c4b4bcd63721ad6}{
+\hyperlink{classBankAccountReader}{BankAccountReader} {\bfseries reader} (interact.cba\_\-directory, interact.current\_\-bank\_\-accounts\_\-file\_\-name)}
+\label{main_8cpp_a51eb6b70e5b9a67d6c4b4bcd63721ad6}
+
+\item 
+\hypertarget{main_8cpp_ab1db0ad203a4783a71a6760352dcc824}{
+void {\bfseries withdrawal} (string user\_\-name, bool privileged)}
+\label{main_8cpp_ab1db0ad203a4783a71a6760352dcc824}
+
+\item 
+\hypertarget{main_8cpp_a3303a145e82d4f1181e976788459b9e7}{
+void {\bfseries deposit} (string user\_\-name)}
+\label{main_8cpp_a3303a145e82d4f1181e976788459b9e7}
+
+\item 
+\hypertarget{main_8cpp_a6a7827b246a9f646dc78164aa64899d9}{
+void {\bfseries view} (string user\_\-name)}
+\label{main_8cpp_a6a7827b246a9f646dc78164aa64899d9}
+
+\item 
+\hypertarget{main_8cpp_aa3a9b18ca7389b2f851edc46b622b0d8}{
+void {\bfseries enable} (string user\_\-name, bool enable)}
+\label{main_8cpp_aa3a9b18ca7389b2f851edc46b622b0d8}
+
+\item 
+\hypertarget{main_8cpp_a2d521d68b08e2bf85cd0f2a323649850}{
+void {\bfseries changeplan} (string user\_\-name)}
+\label{main_8cpp_a2d521d68b08e2bf85cd0f2a323649850}
+
+\item 
+\hypertarget{main_8cpp_a3c7879c9d38d6a6b61029a992f7f1ad4}{
+void {\bfseries deleteAcc} (string user\_\-name)}
+\label{main_8cpp_a3c7879c9d38d6a6b61029a992f7f1ad4}
+
+\item 
+\hypertarget{main_8cpp_a356c1004052bbc9ef6fb47686d7e55c0}{
+void {\bfseries create} (string user\_\-name)}
+\label{main_8cpp_a356c1004052bbc9ef6fb47686d7e55c0}
+
+\item 
+\hypertarget{main_8cpp_ace2ee4d940db4109c07f19814dd3248a}{
+void {\bfseries paybill} (string user\_\-name, bool privileged)}
+\label{main_8cpp_ace2ee4d940db4109c07f19814dd3248a}
+
+\item 
+\hypertarget{main_8cpp_ab0e70b8c69c1fe0125fec80c5f710e0b}{
+void {\bfseries transfer} (string account\_\-holder, bool privileged)}
+\label{main_8cpp_ab0e70b8c69c1fe0125fec80c5f710e0b}
+
+\item 
+\hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{
+int {\bfseries main} ()}
+\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{main_8cpp_a4dde0afea0cca844899bc15339608938}{
+string {\bfseries kTransactionDirectory} = \char`\"{}system/transaction/\char`\"{}}
+\label{main_8cpp_a4dde0afea0cca844899bc15339608938}
+
+\item 
+\hypertarget{main_8cpp_a4006ba5fbb55ffbc320ad0a7d380410a}{
+string {\bfseries kCurrentBankAccountDirectory} = \char`\"{}system/account/\char`\"{}}
+\label{main_8cpp_a4006ba5fbb55ffbc320ad0a7d380410a}
+
+\item 
+\hypertarget{main_8cpp_ad17b402528b8e1f332e14a3d3bb7683a}{
+string {\bfseries kTransactionFileExtension} = \char`\"{}.tra\char`\"{}}
+\label{main_8cpp_ad17b402528b8e1f332e14a3d3bb7683a}
+
+\item 
+\hypertarget{main_8cpp_a8c5c67eace07fbc8c32f95e2811328b9}{
+string {\bfseries kCurrentBankAccountFileName} = \char`\"{}current\_\-bank\_\-account\_\-file.cba\char`\"{}}
+\label{main_8cpp_a8c5c67eace07fbc8c32f95e2811328b9}
+
+\item 
+\hypertarget{main_8cpp_a973eae6fbaf727d518849ca1e7930a31}{
+\hyperlink{classInteractiveStreamHandler}{InteractiveStreamHandler} {\bfseries interact} (kTransactionDirectory, kTransactionFileExtension, kCurrentBankAccountDirectory, kCurrentBankAccountFileName)}
+\label{main_8cpp_a973eae6fbaf727d518849ca1e7930a31}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the main driver file that will run. \begin{DoxyAuthor}{Author}
+Koo Beanz 2.1 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.337
+\end{DoxyVersion}
+This file defines the main method, and is procedural. It will use all three of the classes to handle different input and output for the system. 

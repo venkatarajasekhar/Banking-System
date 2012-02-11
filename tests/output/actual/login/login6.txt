@@ -1,0 +1,5 @@
+System initiating...
+Please Login to the System
+Please choose the type of session. [standard|admin]
+Error: Invalid session type. Login failed
+System shutting down

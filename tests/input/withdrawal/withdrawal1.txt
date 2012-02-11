@@ -1,0 +1,8 @@
+login
+standard
+John Smith
+withdrawal
+00001
+50
+logout
+quit

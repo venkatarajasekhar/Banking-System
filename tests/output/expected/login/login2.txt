@@ -1,0 +1,8 @@
+System initiating...
+Please Login to the System
+Please choose the type of session. [standard|admin]
+Please enter your name.
+Error: Invalid name. Please try again.
+Error: Invalid name. Please try again.
+Error: Invalid name. Login denied.
+System shutting down

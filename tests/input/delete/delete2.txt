@@ -1,0 +1,7 @@
+login
+admin
+delete
+admin
+00000
+logout
+quit

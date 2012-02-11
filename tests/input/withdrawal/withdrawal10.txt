@@ -1,0 +1,8 @@
+login
+admin
+withdrawal
+will Smith
+00002
+501
+logout
+quit

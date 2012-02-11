@@ -1,0 +1,10 @@
+System initiating...
+Please Login to the System
+Please choose the type of session. [standard|admin]
+Please enter your name.
+Welcome, John_Smith. Please enter a command.
+Which account would you like to deposit from?
+What amount would you like to deposit? [In Canadian dollars]
+Error: Must deposit positive amount
+Goodbye, John_Smith.
+System shutting down

@@ -1,0 +1,9 @@
+login
+standard
+Will Smith
+paybill
+00002
+EC
+2000.00
+logout
+quit

@@ -1,0 +1,8 @@
+login
+admin
+withdrawal
+John Smith
+00001
+cat
+logout
+quit

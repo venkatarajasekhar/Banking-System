@@ -1,0 +1,7 @@
+login
+admin
+withdrawal
+John Smath
+00001
+logout
+quit

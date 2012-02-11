@@ -1,0 +1,137 @@
+\hypertarget{classInteractiveStreamHandler}{
+\section{InteractiveStreamHandler Class Reference}
+\label{classInteractiveStreamHandler}\index{InteractiveStreamHandler@{InteractiveStreamHandler}}
+}
+
+
+Used to format user input.  
+
+
+
+
+{\ttfamily \#include $<$interactive-\/stream-\/handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classInteractiveStreamHandler_a84581012cff489309399cba0068975fd}{InteractiveStreamHandler} (string t\_\-dir, string t\_\-ext, string a\_\-dir, string a\_\-name)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classInteractiveStreamHandler}{InteractiveStreamHandler}. \item\end{DoxyCompactList}\item 
+string \hyperlink{classInteractiveStreamHandler_aa372b2a79eb1e88222fdae1f8d58b46b}{FormatInput} (string s)
+\begin{DoxyCompactList}\small\item\em Used to format a string of Input. \item\end{DoxyCompactList}\item 
+string \hyperlink{classInteractiveStreamHandler_a757903776017c997963b67a23c1a2a1e}{FormatName} (string s)
+\begin{DoxyCompactList}\small\item\em Used to format a string into the format of a name. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classInteractiveStreamHandler_a48a8d769c4e9b47f782adf1a3f515477}{cba\_\-directory}
+\begin{DoxyCompactList}\small\item\em Directory structure for current bank account files. \item\end{DoxyCompactList}\item 
+string \hyperlink{classInteractiveStreamHandler_a422f78691f53bc8a8b79f2c8e7edc04f}{current\_\-bank\_\-accounts\_\-file\_\-name}
+\begin{DoxyCompactList}\small\item\em File extension for Current Bank Account Files. \item\end{DoxyCompactList}\item 
+string \hyperlink{classInteractiveStreamHandler_afb0932ba0075caf93d401e5d695e963f}{tra\_\-directory}
+\begin{DoxyCompactList}\small\item\em Directory structure for transaction files. \item\end{DoxyCompactList}\item 
+string \hyperlink{classInteractiveStreamHandler_a64aa30a05a73cac597f445d5a581f4b9}{transaction\_\-file\_\-extension}
+\begin{DoxyCompactList}\small\item\em File extension for Transaction Files. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to format user input. This class will handle formating user input into a structure that the system expects. It also maintains the directory structure and file extensions for the system, so that they only need to be changed in the constants at the top of the main, to affect the whole system.
+
+Input files: N/A Output files: N/A 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classInteractiveStreamHandler_a84581012cff489309399cba0068975fd}{
+\index{InteractiveStreamHandler@{InteractiveStreamHandler}!InteractiveStreamHandler@{InteractiveStreamHandler}}
+\index{InteractiveStreamHandler@{InteractiveStreamHandler}!InteractiveStreamHandler@{InteractiveStreamHandler}}
+\subsubsection[{InteractiveStreamHandler}]{\setlength{\rightskip}{0pt plus 5cm}InteractiveStreamHandler::InteractiveStreamHandler (string {\em t\_\-dir}, \/  string {\em t\_\-ext}, \/  string {\em a\_\-dir}, \/  string {\em a\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classInteractiveStreamHandler_a84581012cff489309399cba0068975fd}
+
+
+Constructor for \hyperlink{classInteractiveStreamHandler}{InteractiveStreamHandler}. 
+
+Used to construct an \hyperlink{classInteractiveStreamHandler}{InteractiveStreamHandler}. You must give two strings for the directory structures, as two strings, one for transaction file extensions, and the other for the name of the current bank accounts file.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em t\_\-dir}]The directory you wish to write the transaction files to.\item[{\em t\_\-ext}]The file extension you wish to use for transaction files.\item[{\em a\_\-dir}]The directory you wish to store the current bank accounts. file in.\item[{\em a\_\-name}]The name of the current bank accounts file, with extension. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classInteractiveStreamHandler_aa372b2a79eb1e88222fdae1f8d58b46b}{
+\index{InteractiveStreamHandler@{InteractiveStreamHandler}!FormatInput@{FormatInput}}
+\index{FormatInput@{FormatInput}!InteractiveStreamHandler@{InteractiveStreamHandler}}
+\subsubsection[{FormatInput}]{\setlength{\rightskip}{0pt plus 5cm}string InteractiveStreamHandler::FormatInput (string {\em s})}}
+\label{classInteractiveStreamHandler_aa372b2a79eb1e88222fdae1f8d58b46b}
+
+
+Used to format a string of Input. 
+
+Formats the string of input to remove case sensitivity
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]The string of input that is being formatted\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Returns the formatted string \hypertarget{classInteractiveStreamHandler_a757903776017c997963b67a23c1a2a1e}{
+\index{InteractiveStreamHandler@{InteractiveStreamHandler}!FormatName@{FormatName}}
+\index{FormatName@{FormatName}!InteractiveStreamHandler@{InteractiveStreamHandler}}
+\subsubsection[{FormatName}]{\setlength{\rightskip}{0pt plus 5cm}string InteractiveStreamHandler::FormatName (string {\em s})}}
+\label{classInteractiveStreamHandler_a757903776017c997963b67a23c1a2a1e}
+
+
+Used to format a string into the format of a name. 
+
+Formats the input string into a valid name format for the system. For example, if given \char`\"{}jOHN SmIth\char`\"{}, it will return \char`\"{}John\_\-Smith\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]The string of input that is being formatted\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Returns the formatted name 
+
+\subsection{Member Data Documentation}
+\hypertarget{classInteractiveStreamHandler_a48a8d769c4e9b47f782adf1a3f515477}{
+\index{InteractiveStreamHandler@{InteractiveStreamHandler}!cba\_\-directory@{cba\_\-directory}}
+\index{cba\_\-directory@{cba\_\-directory}!InteractiveStreamHandler@{InteractiveStreamHandler}}
+\subsubsection[{cba\_\-directory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InteractiveStreamHandler::cba\_\-directory}}}
+\label{classInteractiveStreamHandler_a48a8d769c4e9b47f782adf1a3f515477}
+
+
+Directory structure for current bank account files. 
+
+This is a string that defines the directory structure to all the current bank account files. \hypertarget{classInteractiveStreamHandler_a422f78691f53bc8a8b79f2c8e7edc04f}{
+\index{InteractiveStreamHandler@{InteractiveStreamHandler}!current\_\-bank\_\-accounts\_\-file\_\-name@{current\_\-bank\_\-accounts\_\-file\_\-name}}
+\index{current\_\-bank\_\-accounts\_\-file\_\-name@{current\_\-bank\_\-accounts\_\-file\_\-name}!InteractiveStreamHandler@{InteractiveStreamHandler}}
+\subsubsection[{current\_\-bank\_\-accounts\_\-file\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InteractiveStreamHandler::current\_\-bank\_\-accounts\_\-file\_\-name}}}
+\label{classInteractiveStreamHandler_a422f78691f53bc8a8b79f2c8e7edc04f}
+
+
+File extension for Current Bank Account Files. 
+
+This is a string used to store the file extension that will be used for current bank account files. \hypertarget{classInteractiveStreamHandler_afb0932ba0075caf93d401e5d695e963f}{
+\index{InteractiveStreamHandler@{InteractiveStreamHandler}!tra\_\-directory@{tra\_\-directory}}
+\index{tra\_\-directory@{tra\_\-directory}!InteractiveStreamHandler@{InteractiveStreamHandler}}
+\subsubsection[{tra\_\-directory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InteractiveStreamHandler::tra\_\-directory}}}
+\label{classInteractiveStreamHandler_afb0932ba0075caf93d401e5d695e963f}
+
+
+Directory structure for transaction files. 
+
+This is a string that defines the directory structure to all the transaction files. \hypertarget{classInteractiveStreamHandler_a64aa30a05a73cac597f445d5a581f4b9}{
+\index{InteractiveStreamHandler@{InteractiveStreamHandler}!transaction\_\-file\_\-extension@{transaction\_\-file\_\-extension}}
+\index{transaction\_\-file\_\-extension@{transaction\_\-file\_\-extension}!InteractiveStreamHandler@{InteractiveStreamHandler}}
+\subsubsection[{transaction\_\-file\_\-extension}]{\setlength{\rightskip}{0pt plus 5cm}{\bf InteractiveStreamHandler::transaction\_\-file\_\-extension}}}
+\label{classInteractiveStreamHandler_a64aa30a05a73cac597f445d5a581f4b9}
+
+
+File extension for Transaction Files. 
+
+This is a string used to store the file extension that will be used for Transaction files. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interactive-stream-handler_8h}{interactive-\/stream-\/handler.h}\item 
+\hyperlink{interactive-stream-handler_8cpp}{interactive-\/stream-\/handler.cpp}\end{DoxyCompactItemize}

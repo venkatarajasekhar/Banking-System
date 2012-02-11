@@ -1,0 +1,7 @@
+login
+admin
+deposit
+Jane Smith
+00001
+logout
+quit

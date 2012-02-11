@@ -1,0 +1,7 @@
+login
+admin
+enable
+John Smoth
+00001
+logout
+quit

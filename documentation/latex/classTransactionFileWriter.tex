@@ -1,0 +1,70 @@
+\hypertarget{classTransactionFileWriter}{
+\section{TransactionFileWriter Class Reference}
+\label{classTransactionFileWriter}\index{TransactionFileWriter@{TransactionFileWriter}}
+}
+
+
+Class used to manage writing transaction files.  
+
+
+
+
+{\ttfamily \#include $<$transaction-\/file-\/writer.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTransactionFileWriter_a38805ea13f8ca006b21c48e7707032ed}{TransactionFileWriter} (string directory, string extension)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classTransactionFileWriter}{TransactionFileWriter}. \item\end{DoxyCompactList}\item 
+\hypertarget{classTransactionFileWriter_ac8ac2e3926d6587287b057647410e340}{
+\hyperlink{classTransactionFileWriter_ac8ac2e3926d6587287b057647410e340}{$\sim$TransactionFileWriter} ()}
+\label{classTransactionFileWriter_ac8ac2e3926d6587287b057647410e340}
+
+\begin{DoxyCompactList}\small\item\em De-\/constructor for \hyperlink{classTransactionFileWriter}{TransactionFileWriter}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classTransactionFileWriter_ad5145cb11609d603ba71addc67c3247a}{WriteFile} (string transaction\_\-code, string name, string account\_\-number, string money, string plan)
+\begin{DoxyCompactList}\small\item\em Writes the transaction file. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class used to manage writing transaction files. This class will manage creation of the transaction files. When constructed it requires a string to detail which directory to place the files in, as well as a string to list the extension of the files.
+
+Input files: N/A Output files: Transaction files. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTransactionFileWriter_a38805ea13f8ca006b21c48e7707032ed}{
+\index{TransactionFileWriter@{TransactionFileWriter}!TransactionFileWriter@{TransactionFileWriter}}
+\index{TransactionFileWriter@{TransactionFileWriter}!TransactionFileWriter@{TransactionFileWriter}}
+\subsubsection[{TransactionFileWriter}]{\setlength{\rightskip}{0pt plus 5cm}TransactionFileWriter::TransactionFileWriter (string {\em directory}, \/  string {\em extension})}}
+\label{classTransactionFileWriter_a38805ea13f8ca006b21c48e7707032ed}
+
+
+Constructor for \hyperlink{classTransactionFileWriter}{TransactionFileWriter}. 
+
+Used to construct a \hyperlink{classTransactionFileWriter}{TransactionFileWriter}. You must give it a string for the directory structure, as well as a string for the file extension.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em directory}]The directory you wish to write the files to.\item[{\em extension}]The file extension you wish to use. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTransactionFileWriter_ad5145cb11609d603ba71addc67c3247a}{
+\index{TransactionFileWriter@{TransactionFileWriter}!WriteFile@{WriteFile}}
+\index{WriteFile@{WriteFile}!TransactionFileWriter@{TransactionFileWriter}}
+\subsubsection[{WriteFile}]{\setlength{\rightskip}{0pt plus 5cm}void TransactionFileWriter::WriteFile (string {\em transaction\_\-code}, \/  string {\em name}, \/  string {\em account\_\-number}, \/  string {\em money}, \/  string {\em plan})}}
+\label{classTransactionFileWriter_ad5145cb11609d603ba71addc67c3247a}
+
+
+Writes the transaction file. 
+
+This function will write the transaction file into the proper directory, with the proper name. All it requires is the strings for all the different fields in the transaction file.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transaction\_\-code}]The transaction code that is written. Example \char`\"{}02\char`\"{} for transfer.\item[{\em name}]The name of the user, It does not need to be the total 20 characters. Example \char`\"{}John\_\-Smith\char`\"{} becomes \char`\"{}John\_\-Smith\_\-\_\-\_\-\_\-\_\-\_\-\_\-\_\-\_\-\_\-\char`\"{}\item[{\em money}]This string money represents the money that occurs for the given transaction.\item[{\em plan}]This string is used to show if they are on a student plan, \char`\"{}SP\char`\"{} or not \char`\"{}NP\char`\"{} \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{transaction-file-writer_8h}{transaction-\/file-\/writer.h}\item 
+\hyperlink{transaction-file-writer_8cpp}{transaction-\/file-\/writer.cpp}\end{DoxyCompactItemize}

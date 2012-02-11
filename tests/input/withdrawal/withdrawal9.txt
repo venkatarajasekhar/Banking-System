@@ -1,0 +1,8 @@
+login
+standard
+Will Smith
+withdrawal
+00002
+501
+logout
+quit

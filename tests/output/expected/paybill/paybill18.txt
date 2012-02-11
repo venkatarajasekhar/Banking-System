@@ -1,0 +1,4 @@
+System initiating...
+Please Login to the System
+Error: No user logged in
+System shutting down

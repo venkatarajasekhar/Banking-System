@@ -1,0 +1,10 @@
+System initiating...
+Please Login to the System
+Please choose the type of session. [standard|admin]
+Welcome, Admin. Please enter a command.
+What is the name of the account holder?
+Which account would you like to deposit from?
+What amount would you like to deposit? [In Canadian dollars]
+Error: Deposit limit reached
+Goodbye, Admin.
+System shutting down

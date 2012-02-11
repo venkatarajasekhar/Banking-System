@@ -1,0 +1,10 @@
+System initiating...
+Please Login to the System
+Please choose the type of session. [standard|admin]
+Welcome, Admin. Please enter a command.
+What is the name of the account holder?
+Which account would you like to pay a bill for?
+Please enter the company you wish to pay? [EC|CQ|TV]
+Error: Invalid Company
+Goodbye, Admin.
+System shutting down

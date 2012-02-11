@@ -1,0 +1,12 @@
+System initiating...
+Please Login to the System
+Please choose the type of session. [standard|admin]
+Please enter your name.
+Welcome, John_Smith. Please enter a command.
+Which account would you like to transfer from?
+Who would you like to transfer to?
+Which account would you like to transfer to?
+What amount would you like to pay? [In Canadian dollars]
+Transferring money
+Goodbye, John_Smith.
+System shutting down

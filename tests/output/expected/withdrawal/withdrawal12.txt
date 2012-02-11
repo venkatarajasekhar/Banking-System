@@ -1,0 +1,10 @@
+System initiating...
+Please Login to the System
+Please choose the type of session. [standard|admin]
+Welcome, Admin. Please enter a command.
+What is the name of the account holder?
+Which account would you like to withdraw from?
+What amount would you like to withdraw? [In Canadian dollars]
+Error: Must withdraw positive amount
+Goodbye, Admin.
+System shutting down

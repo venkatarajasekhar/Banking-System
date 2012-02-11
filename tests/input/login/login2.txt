@@ -1,0 +1,6 @@
+login
+standard
+John Smath
+Jane Smith
+John Smoth
+quit

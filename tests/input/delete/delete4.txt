@@ -1,0 +1,7 @@
+login
+admin
+delete
+John Smith
+00006
+logout
+quit

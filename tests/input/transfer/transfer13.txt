@@ -1,0 +1,10 @@
+login
+standard
+John Smith
+transfer
+00001
+Will Smith
+00002
+10000
+logout
+quit

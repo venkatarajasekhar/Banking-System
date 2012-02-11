@@ -1,0 +1,9 @@
+login
+standard
+John Smith
+paybill
+00001
+EC
+asfghjk
+logout
+quit

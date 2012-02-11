@@ -1,0 +1,8 @@
+login
+admin
+deposit
+John Smith
+00001
+foo
+logout
+quit

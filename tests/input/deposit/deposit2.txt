@@ -1,0 +1,7 @@
+login
+admin
+deposit
+John Smith
+00010
+logout
+quit

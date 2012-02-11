@@ -1,0 +1,7 @@
+login
+admin
+paybill
+John Smith
+00002
+logout
+quit

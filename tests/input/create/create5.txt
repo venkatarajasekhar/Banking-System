@@ -1,0 +1,7 @@
+login
+admin
+create
+Will Smith
+-3
+logout
+quit

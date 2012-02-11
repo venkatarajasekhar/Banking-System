@@ -1,0 +1,7 @@
+login
+admin
+create
+Will Smith the Third Junior
+40.00
+logout
+quit

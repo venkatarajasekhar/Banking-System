@@ -1,0 +1,6 @@
+System initiating...
+Please Login to the System
+Please choose the type of session. [standard|admin]
+Welcome, Admin. Please enter a command.
+Goodbye, Admin.
+System shutting down

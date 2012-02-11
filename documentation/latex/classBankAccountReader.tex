@@ -1,0 +1,167 @@
+\hypertarget{classBankAccountReader}{
+\section{BankAccountReader Class Reference}
+\label{classBankAccountReader}\index{BankAccountReader@{BankAccountReader}}
+}
+
+
+Used to handle reading the current bank accounts file.  
+
+
+
+
+{\ttfamily \#include $<$bank-\/account-\/reader.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBankAccountReader_a5ff301528a8bfc7e3326d3429fd86584}{BankAccountReader} (string directory, string name)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classBankAccountReader}{BankAccountReader}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBankAccountReader_a117e91a7d1efefa4bf0b5205dcaef3c3}{ReadFile} (string name, string account)
+\begin{DoxyCompactList}\small\item\em Reads the account given by a name and account \#. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classBankAccountReader_abde5fcd9a4f59f7e3de810ea51b2a0b5}{IsValid} (string name)
+\begin{DoxyCompactList}\small\item\em Checks to see if a user is valid in the system. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classBankAccountReader_ae12dd7be7d621c62b892526d78afd564}{IsValid} (string name, string account)
+\begin{DoxyCompactList}\small\item\em Checks to see if a user is valid in the system. \item\end{DoxyCompactList}\item 
+char \hyperlink{classBankAccountReader_af1fd3ec664775df5d5ca4ea2c233a263}{get\_\-status} ()
+\begin{DoxyCompactList}\small\item\em Returns the status of the account. \item\end{DoxyCompactList}\item 
+float \hyperlink{classBankAccountReader_a1cffe6080d969d43af7dfdbe6f52e517}{get\_\-money} ()
+\begin{DoxyCompactList}\small\item\em Returns the money in the account. \item\end{DoxyCompactList}\item 
+string \hyperlink{classBankAccountReader_a40a0346c2fb73db498db89aa74b9fa84}{get\_\-name} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the account holder. \item\end{DoxyCompactList}\item 
+string \hyperlink{classBankAccountReader_a21ad21dfce6248b5ab27059954981129}{get\_\-acc\_\-number} ()
+\begin{DoxyCompactList}\small\item\em Returns the account number. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to handle reading the current bank accounts file. This class is used to handle reading in the current bank accounts file. It also has the ability to check if a user exists in the system, or if a user with a specific account number exists in the system. Once a file has been read, get methods can be used to access its variables.
+
+Input files: current bank account file Output files: N/A 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBankAccountReader_a5ff301528a8bfc7e3326d3429fd86584}{
+\index{BankAccountReader@{BankAccountReader}!BankAccountReader@{BankAccountReader}}
+\index{BankAccountReader@{BankAccountReader}!BankAccountReader@{BankAccountReader}}
+\subsubsection[{BankAccountReader}]{\setlength{\rightskip}{0pt plus 5cm}BankAccountReader::BankAccountReader (string {\em directory}, \/  string {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBankAccountReader_a5ff301528a8bfc7e3326d3429fd86584}
+
+
+Constructor for \hyperlink{classBankAccountReader}{BankAccountReader}. 
+
+Used to construct a \hyperlink{classBankAccountReader}{BankAccountReader}. Requires the directory to list where the current bank accounts folder, as well as the name of this file. These can be changed in the constants at the top of \hyperlink{main_8cpp}{main.cpp}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em directory}]The directory you wish to read from.\item[{\em name}]The name of the current bank accounts file with extension. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBankAccountReader_a21ad21dfce6248b5ab27059954981129}{
+\index{BankAccountReader@{BankAccountReader}!get\_\-acc\_\-number@{get\_\-acc\_\-number}}
+\index{get\_\-acc\_\-number@{get\_\-acc\_\-number}!BankAccountReader@{BankAccountReader}}
+\subsubsection[{get\_\-acc\_\-number}]{\setlength{\rightskip}{0pt plus 5cm}string BankAccountReader::get\_\-acc\_\-number ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBankAccountReader_a21ad21dfce6248b5ab27059954981129}
+
+
+Returns the account number. 
+
+Returns the account number from the file. This will be overwritten if you read a different account.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Returns a string indicating the account number \hypertarget{classBankAccountReader_a1cffe6080d969d43af7dfdbe6f52e517}{
+\index{BankAccountReader@{BankAccountReader}!get\_\-money@{get\_\-money}}
+\index{get\_\-money@{get\_\-money}!BankAccountReader@{BankAccountReader}}
+\subsubsection[{get\_\-money}]{\setlength{\rightskip}{0pt plus 5cm}float BankAccountReader::get\_\-money ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBankAccountReader_a1cffe6080d969d43af7dfdbe6f52e517}
+
+
+Returns the money in the account. 
+
+Returns the money in the account from the file. This will be overwritten if you read a different account.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Returns a float indicating the money in the account \hypertarget{classBankAccountReader_a40a0346c2fb73db498db89aa74b9fa84}{
+\index{BankAccountReader@{BankAccountReader}!get\_\-name@{get\_\-name}}
+\index{get\_\-name@{get\_\-name}!BankAccountReader@{BankAccountReader}}
+\subsubsection[{get\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string BankAccountReader::get\_\-name ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBankAccountReader_a40a0346c2fb73db498db89aa74b9fa84}
+
+
+Returns the name of the account holder. 
+
+Returns the name of the account holder from the file. This will be overwritten if you read a different account.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Returns a string indicating the name of the account holder \hypertarget{classBankAccountReader_af1fd3ec664775df5d5ca4ea2c233a263}{
+\index{BankAccountReader@{BankAccountReader}!get\_\-status@{get\_\-status}}
+\index{get\_\-status@{get\_\-status}!BankAccountReader@{BankAccountReader}}
+\subsubsection[{get\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}char BankAccountReader::get\_\-status ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBankAccountReader_af1fd3ec664775df5d5ca4ea2c233a263}
+
+
+Returns the status of the account. 
+
+Returns the status of the account from the file. This will be overwritten if you read a different account.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Returns a char indicating the status of the account \hypertarget{classBankAccountReader_ae12dd7be7d621c62b892526d78afd564}{
+\index{BankAccountReader@{BankAccountReader}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!BankAccountReader@{BankAccountReader}}
+\subsubsection[{IsValid}]{\setlength{\rightskip}{0pt plus 5cm}bool BankAccountReader::IsValid (string {\em name}, \/  string {\em account})}}
+\label{classBankAccountReader_ae12dd7be7d621c62b892526d78afd564}
+
+
+Checks to see if a user is valid in the system. 
+
+This will open the current bank accounts file, and search through to see if the account holder specified exists in the system, based on both name and account number.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the account holder.\item[{\em account}]The account number of the account\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Returns true if they exist, and false if they do not. \hypertarget{classBankAccountReader_abde5fcd9a4f59f7e3de810ea51b2a0b5}{
+\index{BankAccountReader@{BankAccountReader}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!BankAccountReader@{BankAccountReader}}
+\subsubsection[{IsValid}]{\setlength{\rightskip}{0pt plus 5cm}bool BankAccountReader::IsValid (string {\em name})}}
+\label{classBankAccountReader_abde5fcd9a4f59f7e3de810ea51b2a0b5}
+
+
+Checks to see if a user is valid in the system. 
+
+This will open the current bank accounts file, and search through to see if the account holder specified exists in the system.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the account holder.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Returns true if they exist, and false if they do not. \hypertarget{classBankAccountReader_a117e91a7d1efefa4bf0b5205dcaef3c3}{
+\index{BankAccountReader@{BankAccountReader}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!BankAccountReader@{BankAccountReader}}
+\subsubsection[{ReadFile}]{\setlength{\rightskip}{0pt plus 5cm}void BankAccountReader::ReadFile (string {\em name}, \/  string {\em account})}}
+\label{classBankAccountReader_a117e91a7d1efefa4bf0b5205dcaef3c3}
+
+
+Reads the account given by a name and account \#. 
+
+Reads current bank accounts file, and searches for the name and account number given as parameters. Once found it will save these values, so that get methods can be used.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the account you are searching for.\item[{\em account}]The account number of the account you are searching for \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bank-account-reader_8h}{bank-\/account-\/reader.h}\item 
+\hyperlink{bank-account-reader_8cpp}{bank-\/account-\/reader.cpp}\end{DoxyCompactItemize}

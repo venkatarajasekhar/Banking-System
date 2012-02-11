@@ -1,0 +1,9 @@
+login
+admin
+transfer
+John Smath
+00001
+will smith
+00002
+logout
+quit

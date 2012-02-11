@@ -1,0 +1,8 @@
+login
+standard
+Will Smith
+deposit
+00002
+340
+logout
+quit

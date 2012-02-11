@@ -1,0 +1,7 @@
+login
+admin
+paybill
+John Smath
+00001
+logout
+quit

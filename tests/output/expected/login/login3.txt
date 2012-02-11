@@ -1,0 +1,8 @@
+System initiating...
+Please Login to the System
+Please choose the type of session. [standard|admin]
+Please enter your name.
+Welcome, John_Smith. Please enter a command.
+Error: System is in use.
+Goodbye, John_Smith.
+System shutting down

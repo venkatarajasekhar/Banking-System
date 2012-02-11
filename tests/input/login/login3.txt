@@ -1,0 +1,6 @@
+login
+standard
+John Smith
+login
+logout
+quit
