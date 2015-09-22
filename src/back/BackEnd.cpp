@@ -23,43 +23,64 @@ along with KooBeanz2.1 Banking System.  If not, see <http://www.gnu.org/licenses
  *****************************************************************************/
  
 #include "BackEnd.h"
+#include <iostream>   // std::cout
+#include <string>     // std::string, std::stoi
+using namespace std;
 
 float BackEnd::stringToFloat(string target){
-	float output; // float value to be returned
-	stringstream string_to_float(target); // store string in stringstream
-	string_to_float>>output; // pipe stringstream to output
-	return output; // return output value
+	string::size_type sizeOfString;     // alias of size_t
+	try{
+        float FTarget = stof(target,&sizeOfString);
+	}catch(...){
+		
+	}
+	return FTarget; // return output value
 }
 
 string BackEnd::floatToString(float target){
-	string output; // string value to be returned
-	stringstream float_to_string; // instantiate stringstream
-	float_to_string<<target; // pipe target to stringstream
-	output=float_to_string.str(); // assign output to string representation
-	return output; // return output value
+	try{
+	string STarget = to_string(target);
+	}catch(...){
+		
+	}
+	return STarget;
 }
 
 int BackEnd::stringToInt(string target){
-	int output; // int value to be returned
-	stringstream string_to_int(target); // store string in stringstream
-	string_to_int>>output; // pipe stringstream to return value
-	return output; // return output value
+	string::size_type sizeOfString;     // alias of size_t
+	try{
+        int IntTarget = stoi(target,&sizeOfString);
+	}catch(...){
+		
+	}
+	return FTarget; // return output value
 }
 
 string BackEnd::intToString(int target){
-	string output; // string to be returned
-	stringstream int_to_string; // instantiate stringstream
-	int_to_string<<target; // pipe integer to stringstream
-	output=int_to_string.str(); // assign output to string representation
-	return output; // return output value
+	try{
+	string STarget = to_string(target);
+	}catch(...){
+		
+	}
+	return STarget;
 }
 
 string BackEnd::updateCounter(string count){
 	//cout << count << endl;
+	try{
 	int counter = stringToInt(count); // convert counter to integer
+	if(counter < 0)
+	throw counter;
+	}catch(int counter){
+	cout << "Exception Caught \n";	
+	}
 	counter++; // increase counter
 	//cout << counter << "INT" << endl;
+	try{
 	string finalCounter =intToString(counter); // convert back to string
+	}catch(...) { // not quite sure the syntax is OK here...
+         
+        }
 	// prepend final counter with zeroes
 	while(finalCounter.size() < 4)
 		finalCounter = '0' + finalCounter;
@@ -74,7 +95,11 @@ void BackEnd::readFiles(){
 	/*
 	 * Read transaction files start
 	 */
+	 try{
 	reader.open(transaction_directory_and_name.c_str());
+	 }catch(...){
+	 	
+	 }
 
 	string tra_data = "";
 	
@@ -95,13 +120,22 @@ void BackEnd::readFiles(){
 		transactions.push_back(n);
 	}
 	// close the reader
+	try{
 	reader.close();
+	}catch(...){
+		
+	}
 
 	/*
 	 * Read Master bank accounts file start
 	 */
+
 	string filename=account_directory+master_account_name;
+	try{
 	reader.open(filename.c_str());
+	}catch(...){
+		
+	}
 	string mba_data = "";
 	
 	// read each line and parse the account information
@@ -122,8 +156,12 @@ void BackEnd::readFiles(){
 
 		masterAcc.push_back(n);
 	}
+	try{
 	// close the reader
 	reader.close();
+	}catch(...){
+		
+	}
 }
 
 void BackEnd::writeFiles(){
@@ -161,11 +199,19 @@ void BackEnd::writeFiles(){
 	
 	// Write master bank account file
 	// open the master bank account file 
+	try{
 	write.open((account_directory+master_account_name).c_str());
+	}catch(...){
+		
+	}
 	// write the file data
 	write<<file_data;
 	// close the writer
+	try{
 	write.close();
+	}catch{
+		
+	}
 }
 
 void BackEnd::change_balance(int x,bool withdraw){
